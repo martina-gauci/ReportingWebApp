@@ -1,0 +1,168 @@
+﻿@model NEMESYS.Models.Report
+
+@{
+    ViewData["Title"] = "Edit Report";
+}
+<h2>Edit Your Report</h2>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+
+        <form asp-action="EditReport">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="ReportId" /><!--Important for the update operation - to specify which report we are updating -->
+            <input type="hidden" asp-for="ReporterId" />
+            <input type="hidden" asp-for="InvestigatorID" />
+            <input type="hidden" asp-for="DateOfSubmission" />
+            <input type="hidden" asp-for="Status" />
+            <input type="hidden" asp-for="UpVoteCount" />
+            <input type="hidden" asp-for="PhotoUrl">
+
+            <div class="row">
+                <!--Left Column-->
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="TypeOfHazard" class="control-label"></label>
+                            <input asp-for="TypeOfHazard" class="form-control" />
+                            <span asp-validation-for="TypeOfHazard" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="Location" class="control-label"></label>
+                            <input asp-for="Location" class="form-control" />
+                            <span asp-validation-for="Location" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="DateAndTimeOfSpotting" class="control-label"></label>
+                            <input asp-for="DateAndTimeOfSpotting" class="form-control" />
+                            <span asp-validation-for="DateAndTimeOfSpotting" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="Priority" class="control-label"></label>
+                            <select asp-for="Priority" class="form-control">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                            <span asp-validation-for="Priority" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Right Column-->
+                <div class="col-xs-6">
+                    <label class="control-label" id="labelForMap">Location Pin On Map</label>
+                    <div id="Map"></div>
+                    <input type="hidden" id="longitudeField" asp-for="Longitude" />
+                    <input type="hidden" id="latitudeField" asp-for="Latitude" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="8"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <input id="editReportButton" class="styled-btn" type="submit" value="Save" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div class="footerInfo">
+    <a class="styled-link" asp-action="Details" asp-route-id="@Model.ReportId">Back to Report</a>
+</div>
+
+<script>
+    function initMap() {
+
+        //Getting the latitude and longitude and storing them in variables
+        var latitude = Number(document.getElementById('latitudeField').value);
+        var longitude = Number(document.getElementById('longitudeField').value);
+
+        //Map options object
+        var options = {
+            zoom: 16,
+            center: { lat: latitude, lng: longitude }
+        }
+
+        //Creating new map
+        var map = new google.maps.Map(document.getElementById('Map'), options);
+
+        //This will place a marker where the user has dropped it when creating the report
+        var marker = new google.maps.Marker({
+            position: { lat: latitude, lng: longitude},
+            map: map,
+            draggable: true
+        });
+
+        //assigning the marker the necessary event handers
+        marker.addListener('drag', handleEvent);
+        marker.addListener('dragend', handleEvent);
+
+        //Event handler that listens for clicks on the map
+        google.maps.event.addListener(map, 'click', function (event) {
+            //When the user clicks on the map, call the addMarker function,
+            //passing to it the coordinates where the user clicked
+            addMarker(event.latLng);
+
+            //Updating the hidden fields that hold the longitude and latitude
+            document.getElementById("longitudeField").value = marker.getPosition().lng();
+            document.getElementById("latitudeField").value = marker.getPosition().lat();
+        });
+
+        //Add Marker Function - the coordinates parameter is an object
+        function addMarker(coordinates) {
+            //Remove the already existing marker from the map
+            if (marker) {
+                marker.setMap(null);
+            }
+            //Adding the marker to the map
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                draggable: true
+            });
+
+            //assigning the marker the necessary event handers
+            marker.addListener('drag', handleEvent);
+            marker.addListener('dragend', handleEvent);
+        }
+
+        //Marker event handler function
+        //Basically, while the marker is being dragged and after it has been dragged, this event handler
+        //will be called and it will update the hidden fields that hold the longitude and latitude
+        function handleEvent(event) {
+            document.getElementById("longitudeField").value = event.latLng.lng();
+            document.getElementById("latitudeField").value = event.latLng.lat();
+        }
+     
+    }//end of initMap() function
+</script>
+
+
+<!--Here I include my API key for the Google Maps API Service-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARRHH45Hg1tafN2ZyMQaSVRR5tk3lleA8&callback=initMap">
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

@@ -1,0 +1,180 @@
+﻿@model NEMESYS.ViewModels.ReportAndUserUpvoteDetailsViewModel
+
+@{
+    ViewData["Title"] = "Report Details";
+}
+
+<div class="topRow">
+    <h2 class="pageTitle">Report Details</h2>
+    <!--Below is some logic that displays an 'Edit Report' and 'Delete Report' Button if the user is logged in and the email
+        address of the user that is logged in matches the email address of the reporter who submitted the current report-->
+    @if (User.Identity.IsAuthenticated) {
+        foreach (var claim in User.Claims) {
+            if (claim.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress") {
+                string userEmail = claim.Value;
+                if (userEmail == Model.Report.Reporter.Email) {
+                    <div class="containerOfEditAndDeleteReportButtons">
+                        <a asp-action="EditReport" asp-route-reportID="@Model.Report.ReportId" class="btn btn-primary btn-lg editOrDeleteReportButton">Edit Report</a>
+                        <form class="deleteReportForm" asp-action="DeleteReport" onsubmit="return confirm('Are you sure you want to delete this report? Any existing investigation will be deleted as well!');">
+                            <input type="hidden" name="reportID" value="@Model.Report.ReportId" /><!--IMP to know which report to delete!-->
+                            <input type="submit" class="btn btn-primary btn-lg editOrDeleteReportButton" value="Delete Report" />
+                        </form>
+                    </div>
+                }
+            }
+        }
+    }
+</div>
+
+<hr />
+
+
+<div class="row display-row">
+    <div class="col-xs-4">
+        <h4><strong>Type of Hazard:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.TypeOfHazard)</p>
+    </div>
+    <div class="col-xs-5">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-2">
+                <h4><strong>Location:</strong></h4>
+                <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Location)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <h4><strong>Date and Time Spotted:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.DateAndTimeOfSpotting.ToString("dd/MMM/yyyy h:mm tt")</p>
+    </div>
+</div>
+
+
+<div class="row display-row">
+    <div class="col-xs-4">
+        <h4><strong>Priority:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Priority)</p>
+    </div>
+    <div class="col-xs-5">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-2">
+                <h4><strong>Status:</strong></h4>
+                <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Status)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row display-row">
+    <div class="col-xs-12">
+        <h4><strong>Location On Map</strong></h4>
+        <div id="Map"></div>
+    </div>
+</div>
+
+
+<div class="row display-row flexRow">
+    <div class="col-xs-9 flexColumn">
+        <h4><strong>Description</strong></h4>
+        <p class="ReportAndInvestigationInfoText descriptionText">@Html.DisplayFor(model => model.Report.Description)</p>
+    </div>
+    <div class="col-xs-3">
+        <h4><strong>Image:</strong></h4>
+        <img class="img-responsive" src="@Model.Report.PhotoUrl" id="reportDetailsImage">
+    </div>
+</div>
+
+
+<div class="row display-row2">
+    <div class="col-xs-4">
+        <h4><strong>Reporter Name:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Reporter.FullName)</p>
+    </div>
+    <div class="col-xs-4">
+        <h4><strong>Reporter Phone Number:</strong></h4>
+        @if (Model.Report.Reporter.Phone != null) {
+            <p class="ReportAndInvestigationInfoText">@Model.Report.Reporter.Phone</p>
+        }
+        else {
+            <p class="ReportAndInvestigationInfoText">Not Specified</p>
+        }
+    </div>
+    <div class="col-xs-3 col-xs-offset-1">
+        <h4><strong>Reporter Email Address:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Reporter.Email)</p>
+    </div>
+</div>
+
+
+<div class="row bottom-row">
+    <div class="col-xs-4">
+        <h4><strong>Assigned Investigator:</strong></h4>
+        <!--Since an investigation has been added, we know for sure that an investigator (which can
+        be a user with role investigator or admin) has been assigned to the report-->
+        <p class="ReportAndInvestigationInfoText"><strong>Full Name: </strong>@Model.Report.Investigator.FullName</p>
+        <p class="ReportAndInvestigationInfoText"><strong>Email: </strong>@Model.Report.Investigator.Email</p>
+        <!--If the assigned investigator (which can be a user with role investigator or admin) has added their phone, then display it-->
+        @if (Model.Report.Investigator.Phone != null) {
+            <p class="ReportAndInvestigationInfoText"><strong>Phone: </strong>@Model.Report.Investigator.Phone</p>
+        }
+    </div>
+    <div class="col-xs-3">
+        <h4><strong>Investigation:</strong></h4>
+        <a asp-controller="Investigation" asp-action="ViewInvestigation" asp-route-forReportID="@Model.Report.ReportId" class="btn btn-primary btn-lg AddOrViewInvestigationButton">View Investigation</a>
+    </div>
+</div>
+
+
+<div class="footerInfo">
+    <span><strong>Date Posted: </strong>@Model.Report.DateOfSubmission.ToString("dd/MMM/yyyy")</span> &nbsp&nbsp|&nbsp&nbsp
+    <span><strong>Upvotes: </strong>@Html.DisplayFor(model => model.Report.UpVoteCount)</span>  &nbsp&nbsp|&nbsp&nbsp
+
+    <!--Depending on whether a user has upvoted the current report or not, display the appropriate form(just clickable text in this case)-->
+    @if (Model.HasUpvoted == false) {
+        <form class="AddOrRemoveUpvoteButton" asp-action="UpvoteReport">
+            <input type="hidden" name="reportID" value="@Model.Report.ReportId" /><!--IMP to know which report to upvote!-->
+            <input type="submit" class="styled-submit-button" value="Upvote this Report" />
+        </form>
+    }
+    else {
+        <form class="AddOrRemoveUpvoteButton" asp-action="RemoveUpvoteFromReport">
+            <input type="hidden" name="reportID" value="@Model.Report.ReportId" /><!--IMP to know which report to remove upvote from!-->
+            <input type="submit" class="styled-submit-button" value="Remove Upvote" />
+        </form>
+    }
+
+    &nbsp&nbsp|&nbsp&nbsp
+    <a class="styled-link" asp-action="GetAllReports">Back to All Reports List</a>
+</div>
+
+
+<script>
+    function initMap() {
+
+        //Getting the latitude and longitude and storing them in variables
+        var latitude = Number(@Model.Report.Latitude);
+        var longitude = Number(@Model.Report.Longitude);
+
+        //Map options object
+        var options = {
+            zoom: 16,
+            center: { lat: latitude, lng: longitude }
+        }
+
+        //Creating new map
+        var map = new google.maps.Map(document.getElementById('Map'), options);
+
+        //This will place a marker where the user has dropped it when creating the report
+        var marker = new google.maps.Marker({
+            position: { lat: latitude, lng: longitude },
+            map: map
+        });
+
+    }//end of initMap() function
+</script>
+
+
+<!--Here I include my API key for the Google Maps API Service-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARRHH45Hg1tafN2ZyMQaSVRR5tk3lleA8&callback=initMap">
+</script>

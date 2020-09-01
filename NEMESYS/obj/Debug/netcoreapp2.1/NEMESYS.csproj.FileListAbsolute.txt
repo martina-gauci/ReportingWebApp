@@ -1,0 +1,175 @@
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.deps.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.dev.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.input.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.output.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CopyComplete
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profile.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\EditUserPhone.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetAllReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\CreateReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\EditReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\CreateInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\ViewInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\EditInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourAssignedReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\HallOfFame.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Nathan's Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.deps.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.dev.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.input.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.output.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\EditUserPhone.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\HallOfFame.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profile.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\CreateInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\EditInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\ViewInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\CreateReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\EditReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetAllReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourAssignedReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CopyComplete
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\UPDATED Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.deps.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.dev.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.input.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.output.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\EditUserPhone.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\HallOfFame.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profile.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\CreateInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\EditInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\ViewInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\CreateReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\EditReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetAllReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourAssignedReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\Final Implementation\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CopyComplete
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.deps.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.runtimeconfig.dev.json
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\bin\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.AssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.input.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.TagHelpers.output.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\EditUserPhone.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\HallOfFame.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profile.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\CreateInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\EditInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Investigation\ViewInvestigation.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\CreateReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\EditReport.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetAllReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourAssignedReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\GetYourReports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorOrAdminAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportIsInvestigatorOrAdminAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorOrAdminAndInvestigationAdded.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Report\ViewReportNotLoggedInOrNotInvestigatorOrAdminAndNoInvestigationAddedYet.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.Views.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.dll
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.pdb
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\NEMESYS.csproj.CopyComplete
+C:\Users\user\Desktop\Assignments - Semester 4\Web Assignment\FINAL ACTUAL IMPLEMENTATION\NEMESYS\NEMESYS\obj\Debug\netcoreapp2.1\Razor\Views\Account\EditUserRoles.g.cshtml.cs

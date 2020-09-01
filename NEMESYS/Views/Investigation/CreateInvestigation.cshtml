@@ -1,0 +1,82 @@
+﻿@model NEMESYS.ViewModels.InvestigationAndReportViewModel
+
+@{
+    ViewData["Title"] = "Create Investigation";
+}
+
+<h2 id="CreateInvestigationHeader">Create Investigation For Report:</h2>
+
+<div class="row InvestigationViewReportDetailsRow">
+    <div class="col-xs-4">
+        <h4><strong>Type of Hazard:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.TypeOfHazard</p>
+    </div>
+    <div class="col-xs-4">
+        <h4 style="text-align:center;"><strong>Location:</strong></h4>
+        <p class="ReportAndInvestigationInfoText" style="text-align:center;">@Model.Report.Location</p>
+    </div>
+    <div class="col-xs-4">
+        <h4 style="text-align:right;"><strong>Date and Time Spotted:</strong></h4>
+        <p class="ReportAndInvestigationInfoText" style="text-align:right;">@Model.Report.DateAndTimeOfSpotting.ToString("dd/MMM/yyyy h:mm tt")</p>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-xs-12">
+        <form asp-action="CreateInvestigation">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" name="reportID" value="@Model.Report.ReportId" /><!--IMP to know which report the investigation is related to!-->
+
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label asp-for="Investigation.DateOfAction" class="control-label"></label>
+                    <input asp-for="Investigation.DateOfAction" type="date" class="form-control" />
+                    <span asp-validation-for="Investigation.DateOfAction" class="text-danger"></span>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="statusSet" class="control-label">Update Status of Report:</label>
+                    <select class="form-control" id="statusSet" name="setStatus">
+                        <option value="1">Being Investigated</option>
+                        <option value="2">Closed</option>
+                        <option value="3">No Action Required</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label asp-for="Investigation.Description" class="control-label"></label>
+                    <textarea asp-for="Investigation.Description" class="form-control" rows="8"></textarea>
+                    <span asp-validation-for="Investigation.Description" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input id="createInvestigationButton" class="styled-btn" type="submit" value="Create Investigation" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footerInfo">
+    <a class="styled-link" asp-controller="Report" asp-action="Details" asp-route-id="@Model.Report.ReportId">Back to Report</a>
+</div>
+
+<!--WHY DID WE USE THIS JQUERY FUNCTION?-->
+<!--Since on pressing the submit button, an email has to be sent to the owner of the report, the submitting process will take some time -->
+<!--The user may wonder if they have pressed the button or not, so they may press it again. In this case, we do not want two emails to be sent, and two records to be added to the db!-->
+<!--Thus, once the user clicks the create report button, it is disabled, however if there are validation errors, it is not disabled-->
+<script type="text/javascript">
+    //on submitting the form, if everything is valid, then disable the submit button
+    $('form').submit(function () {
+        if ($(this).valid()) {
+            $(':submit', this).attr('disabled', 'disabled');
+            //Here I am changing the text inside the submit button so that the user knows the investigation is being created
+            document.getElementById("createInvestigationButton").value = "Creating - Please Wait...";
+        }
+    });
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

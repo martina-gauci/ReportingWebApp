@@ -1,0 +1,159 @@
+﻿@model IEnumerable<NEMESYS.Models.User>
+
+@{
+    ViewData["Title"] = "All Users";
+}
+
+<h2>All Users</h2>
+<hr />
+
+<!--Filter select bar-->
+<div>
+    <form method="GET" asp-controller="Account" asp-action="EditUserRoles">
+        <p>
+            <div class="FilterBy">
+                Role:
+            </div>
+            <div class="FilterInputFieldContainer">
+                <select type="submit" name="roleString" class="FilterInputField2">
+                    <option value=""> All </option>
+                    <option value="Reporter">Reporters</option>
+                    <option value="Investigator">Investigators</option>
+                    <option value="Admin">Admins</option>
+                </select>
+            </div>
+            <div class="FilterButton">
+                <input class="styled-btn-sm" type="submit" value="Filter" />
+            </div>
+
+        </p>
+    </form>
+</div>
+
+<br />
+
+
+<!--If the IEnumerable does not contain any Users, display an appropriate message-->
+@if (Model == null || !Model.Any()) {
+    <hr />
+    <h2 class="NoReportsMessage">No Users with the Selected Role Found!</h2>
+}
+
+//Otherwise display the table
+else {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoOfReportsSubmitted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Role)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @if (item.Phone == null) {
+                            <span>Not Specified</span>
+                        }
+                        else {
+                            <span>@item.Phone</span>
+                        }
+                    </td>
+                    <td>
+                        &emsp;&emsp;&emsp;&emsp;@Html.DisplayFor(modelItem => item.NoOfReportsSubmitted)
+                    </td>
+                    <td>
+                        <!--If the user is logged in (surely in this case, otherwise they can't access this page), then get their email-->
+                        @if (User.Identity.IsAuthenticated) {
+                            string currentUserEmail = null;
+                            foreach (var claim in User.Claims) {
+                                if (claim.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress") {
+                                    currentUserEmail = claim.Value;
+                                }
+                            }
+
+                            <form asp-action="EditUserRoles">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" name="userID" value="@item.UserId" /><!--IMP to know which user to update!-->
+                                <!--We don't want to allow the currently logged in admin to accidently unassign himself
+                                    from an admin so we set the select for the currently logged in user's row to disabled-->
+                                @if (currentUserEmail == item.Email) {
+                                    <div class="form-group userRoleSelectContaier">
+                                        <select class="form-control" disabled>
+                                            <option value="0">Reporter</option>
+                                            <option value="1">Investigator</option>
+                                            <option value="2" selected>Admin</option>
+                                        </select>
+                                    </div>
+                                }
+                                //otherwise just display a select field which will have the
+                                //default selected value equal to that particular user's role
+                                else {
+                                    <div class="form-group userRoleSelectContaier">
+                                        @if (item.Role == roles.Reporter) {
+                                            <select class="form-control" name="setRole" onchange="submitForm(this.form)">
+                                                <option value="0" selected>Reporter</option>
+                                                <option value="1">Investigator</option>
+                                                <option value="2">Admin</option>
+                                            </select>
+                                        }
+                                        else if (item.Role == roles.Investigator) {
+                                            <select class="form-control" name="setRole" onchange="submitForm(this.form)">
+                                                <option value="0">Reporter</option>
+                                                <option value="1" selected>Investigator</option>
+                                                <option value="2">Admin</option>
+                                            </select>
+                                        }
+                                        else {
+                                            <select class="form-control" name="setRole" onchange="submitForm(this.form)">
+                                                <option value="0">Reporter</option>
+                                                <option value="1">Investigator</option>
+                                                <option value="2" selected>Admin</option>
+                                            </select>
+                                        }
+                                    </div>
+                                }
+                            </form>
+
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+}
+
+
+<!--When a select form's selected value is changed, this function is executed-->
+<script type="text/javascript">
+    function submitForm(form) {
+        //Display a confirm popup, and if user clicks ok, submit the form
+        if (confirm('Are you sure you want to change this user\'s role?')) {
+            form.submit();
+        }
+        //Otherwise (if the user clicks cancel), reset the form
+        else {
+            form.reset();
+        }
+    }
+</script>

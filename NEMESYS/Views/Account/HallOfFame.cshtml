@@ -1,0 +1,58 @@
+﻿@model IEnumerable<NEMESYS.ViewModels.HallOfFameViewModel>
+@{
+    ViewData["Title"] = "Hall of Fame";
+}
+<h1 class="HallOfFameHeadings">Hall Of Fame</h1>
+<br />
+<h3 class="HallOfFameHeadings">Most Active Reporters in @DateTime.Now.Year</h3>
+<hr />
+
+<!--If the IEnumerable does not contain any objects, display an appropriate message-->
+@if (Model == null || !Model.Any()) {
+    <h2 class="NoReportsMessage">Nobody has added a Report Yet this Year!</h2>
+}
+//Otherwise(i.e. if the IEnumerable does contain objects), display their details
+else {
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Count)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @if (item.Phone == null) {
+                            <span>Not Specified</span>
+                        }
+                        else {
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        }
+                    </td>
+                    <td>
+                        &emsp;&emsp;&emsp;&emsp;@Html.DisplayFor(modelItem => item.Count)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

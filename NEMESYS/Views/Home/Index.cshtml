@@ -1,0 +1,56 @@
+﻿@model NEMESYS.Models.User
+
+@{
+    ViewData["Title"] = "Home";
+}
+<h2 id="HomePageHeading">Welcome To</h2>
+<h1 id="HomePageTitle">NEMESYS</h1>
+
+<div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+        <p id="HomePageFirstParagraph">
+            Have you ever spotted something dangerous which can easily cause an
+            accident and/or injury on campus? Have you ever noticed someone working
+            without the necessary safety precautions (e.g. working without protective
+            equipment)? Have you ever felt that some caution could save lives?
+        </p>
+
+        <p class="HomePageOtherParagraphs">
+            This is why we created <span class="NemesysInHomePageParagraph">NEMESYS</span> -
+            a Near Miss Exposure and Reporting System.  Students and staff can use
+            <span class="NemesysInHomePageParagraph">NEMESYS </span> to report near
+            misses on and around campus – where administration can then intervene.
+        </p>
+
+        <p class="HomePageOtherParagraphs">
+            Usage is very simple. No need to create an account - you can use your already
+            existing university account. To create a report, click below:
+        </p>
+        <br />
+        <!--if the user is not logged in, just display the create new report button-->
+        @if (!User.Identity.IsAuthenticated) {
+            <a id="HomePageButton" asp-area="" asp-controller="Report" asp-action="CreateReport">Create A Report <i class="fas fa-caret-right"></i></a>
+        }
+        else {
+            if (Model != null) { //It shouldnt be in this case in reality(this was used for development purposes)
+                <!--if the user is logged in but is not an admin, just display the create new report button-->
+                if (Model.Role != roles.Admin) {
+                    <a id="HomePageButton" asp-area="" asp-controller="Report" asp-action="CreateReport">Create A Report <i class="fas fa-caret-right"></i></a>
+                }
+                //if the user is logged in and is an admin, then display two links,
+                //one to create a new report, and the other to edit users' roles
+                else {
+                    <div class="row">
+                        <div class="col-xs-6" id="leftAdminHomePageButtonContainer">
+                            <a class="HomePageAdminButtons" asp-area="" asp-controller="Report" asp-action="CreateReport">Create A Report <i class="fas fa-caret-right"></i></a>
+                        </div>
+                        <div class="col-xs-6" id="rightAdminHomePageButtonContainer">
+                            <a class="HomePageAdminButtons" asp-area="" asp-controller="Account" asp-action="EditUserRoles">Edit User Roles <i class="fas fa-user-cog"></i></a>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+</div>
+

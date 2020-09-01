@@ -1,0 +1,64 @@
+﻿@model NEMESYS.Models.Investigation
+
+@{
+    ViewData["Title"] = "View Investigation";
+}
+
+<h2 id="CreateInvestigationHeader">View Investigation For Report:</h2>
+
+<div class="row InvestigationViewReportDetailsRow">
+    <div class="col-xs-4">
+        <h4><strong>Type of Hazard:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.TypeOfHazard</p>
+    </div>
+    <div class="col-xs-4">
+        <h4><strong>Location:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.Location</p>
+    </div>
+    <div class="col-xs-4">
+        <h4><strong>Date and Time Spotted:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.DateAndTimeOfSpotting.ToString("dd/MMM/yyyy h:mm tt")</p>
+    </div>
+</div>
+
+<hr />
+
+<div class="row display-row">
+    <div class="col-xs-4">
+        <h4><strong>Investigator Name:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.Report.Investigator.FullName</p>
+    </div>
+    <div class="col-xs-4">
+        <h4><strong>Investigator Phone Number:</strong></h4>
+        @if (Model.Report.Investigator.Phone != null) {
+            <p class="ReportAndInvestigationInfoText">@Model.Report.Investigator.Phone</p>
+        }
+        else {
+            <p class="ReportAndInvestigationInfoText">Not Specified</p>
+        }
+    </div>
+    <div class="col-xs-4">
+        <h4><strong>Investigator Email Address:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Html.DisplayFor(model => model.Report.Investigator.Email)</p>
+    </div>
+</div>
+
+<div class="row bottom-row">
+    <div class="col-xs-4">
+        <h4><strong>Date of Action:</strong></h4>
+        <p class="ReportAndInvestigationInfoText">@Model.DateOfAction.ToString("dd/MMM/yyyy")</p>
+    </div>
+    <div class="col-xs-7">
+        <h4><strong>Description Of Investigation:</strong></h4>
+        <p class="ReportAndInvestigationInfoText descriptionText">@Model.Description</p>
+    </div>
+</div>
+<div class="footerInfo">
+    <span><strong>Investigation Posted On: </strong>@Model.DateOfSubmission.ToString("dd/MMM/yyyy")</span> &nbsp&nbsp|&nbsp&nbsp
+    <a class="styled-link" asp-controller="Report" asp-action="Details" asp-route-id="@Model.Report.ReportId">Back to Report</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

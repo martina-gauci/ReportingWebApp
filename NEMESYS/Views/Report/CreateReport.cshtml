@@ -1,0 +1,217 @@
+﻿@model NEMESYS.Models.Report
+
+@{
+    ViewData["Title"] = "Create a New Report";
+}
+
+<h2>Create a New Report</h2>
+<hr />
+
+<div class="row">
+    <div class="col-xs-12">
+
+        <form asp-action="CreateReport" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <!--Left Column-->
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="TypeOfHazard" class="control-label"></label>
+                            <input asp-for="TypeOfHazard" class="form-control" />
+                            <span asp-validation-for="TypeOfHazard" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="Location" class="control-label"></label>
+                            <input asp-for="Location" class="form-control" />
+                            <span asp-validation-for="Location" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="DateAndTimeOfSpotting" class="control-label"></label>
+                            <input asp-for="DateAndTimeOfSpotting" class="form-control" />
+                            <span asp-validation-for="DateAndTimeOfSpotting" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row addOrEditReportInputFieldWithTopMargin">
+                        <div class="form-group col-xs-12">
+                            <label asp-for="Priority" class="control-label"></label>
+                            <select asp-for="Priority" class="form-control">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                            <span asp-validation-for="Priority" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Right Column-->
+                <div class="col-xs-6">
+                    <label class="control-label" id="labelForMap">Select Location On Map Below</label>
+                    <div id="Map"></div>
+                    <input type="hidden" id="longitudeField" asp-for="Longitude" />
+                    <input type="hidden" id="latitudeField" asp-for="Latitude" />
+                    <span id="dropPinErrorMessage"></span>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label class="btn btn-primary" id="addReportImageButton" for="my-file-selector">
+                        <input id="my-file-selector" type="file" name="img" style="display:none" onchange="fileValidation()">
+                        Add an Image (Optional)
+                    </label>
+                    <span class='label label-info' id="upload-file-info"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="8"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <input id="createReportButton" class="styled-btn" type="submit" value="Create Report" />
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div><!--End of form div-->
+
+<div class="footerInfo">
+    <a class="styled-link" asp-action="GetAllReports">Back to List</a>
+</div>
+
+<!--This js function checks if the uploaded file(if any) is valid (image file), and if not, it returns an
+     alert to the user. This is the front end validation for the file type.  If the user somehow bypasses
+     the front end, there is also backend validation to ensure the uploaded file is of a valid type-->
+<script type="text/javascript">
+    function fileValidation() {
+        var fileInput = document.getElementById('my-file-selector');
+        var filePath = fileInput.value;
+        var allowedExtensions = /(\.jpg|\.JPG|\.jpeg|\.JPEG|\.png|\.PNG|\.gif|\.GIF)$/i;
+        //if the file type uploaded is invalid
+        if (!allowedExtensions.exec(filePath)) {
+            //Remove label which shows you file name (if already present)
+            document.getElementById('upload-file-info').innerHTML = "";
+            //display alert to user
+            alert('Unsupported file type! Only image files are accepted!');
+            //remove file from the input field
+            fileInput.value = '';
+            return false;
+        }
+        //if the file type uploaded is valid (i.e. an image)
+        else {
+            //display the image name in a label below the "add image" bar
+            document.getElementById('upload-file-info').innerHTML = fileInput.files[0].name;
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    function initMap() {
+        //This will store the marker that the user drops on the map
+        var marker;
+
+        //Map options object
+        var options = {
+            zoom: 16,
+            center: { lat: 35.902351, lng: 14.483745 }
+        }
+
+        //Creating new map
+        var map = new google.maps.Map(document.getElementById('Map'), options);
+
+        //Event handler that listens for clicks on the map
+        google.maps.event.addListener(map, 'click', function (event) {
+            //When the user clicks on the map, call the addMarker function,
+            //passing to it the coordinates where the user clicked
+            addMarker(event.latLng);
+
+            //Updating the hidden fields that hold the longitude and latitude
+            document.getElementById("longitudeField").value = marker.getPosition().lng();
+            document.getElementById("latitudeField").value = marker.getPosition().lat();
+            //If any error message is present underneath the map, remove it since the user has added a pin
+            document.getElementById("dropPinErrorMessage").innerHTML = "";
+        });
+
+        //Add Marker Function - the coordinates parameter is an object
+        function addMarker(coordinates) {
+            //if any previous marker exists, we fist remove it from the map
+            if (marker) {
+                marker.setMap(null);
+            }
+            //Adding the marker to the map
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                draggable: true
+            });
+
+            //assigning the marker the necessary event handers
+            marker.addListener('drag', handleEvent);
+            marker.addListener('dragend', handleEvent);
+        }
+
+        //Marker event handler function
+        //Basically, while the marker is being dragged and after it has been dragged, this event handler
+        //will be called and it will update the hidden fields that hold the longitude and latitude
+        function handleEvent(event) {
+            document.getElementById("longitudeField").value = event.latLng.lng();
+            document.getElementById("latitudeField").value = event.latLng.lat();
+        }
+
+    }//end of initMap() function
+</script>
+
+
+<!--Here I include my API key for the Google Maps API Service-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARRHH45Hg1tafN2ZyMQaSVRR5tk3lleA8&callback=initMap">
+</script>
+
+
+<!--WHY DID WE USE THIS JQUERY FUNCTION?-->
+<!--First of all, if on submitting the form, the user has not dropped a pin on the map, then -->
+<!--we use this function to display a message that a pin is required underneath the map-->
+<!--Second of all, since on pressing the submit button, an email has to be sent to all investigators, the submitting process will take some time -->
+<!--The user may wonder if they have pressed the button or not, so they may press it again. In this case, we do not want two reports to be submitted!-->
+<!--Thus, once the user clicks the create report button, it is disabled, however if there are validation errors, it is not disabled-->
+<script type="text/javascript">
+
+    $('form').submit(function () {
+        //On pressing the submit button, if the hidden longitude and latitude fields are empty (because the user would not have
+        //dropped a pin on the map), then display a message underneath the map telling the user to drop a pin on the map.
+        if ($("#longitudeField").val() == '' && $("#latitudeField").val() == '') {
+            document.getElementById("dropPinErrorMessage").innerHTML = "Please Drop a Pin on the Map to Show the Location of The Near Miss!";
+            $('html, body').animate({ scrollTop: 0 }, 'fast'); //This scrolls to the top of the page
+            return false;
+        }
+
+        //on submitting the form, if everything is valid, then disable the submit button
+        if ($(this).valid()) {
+            $(':submit', this).attr('disabled', 'disabled');
+            //Here I am changing the text inside the submit button so that the user knows the report is being created
+            document.getElementById("createReportButton").value = "Creating - Please Wait...";
+        }
+    });
+
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

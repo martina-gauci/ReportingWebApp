@@ -1,0 +1,128 @@
+﻿@model IEnumerable<NEMESYS.Models.Report>
+
+@{
+    ViewData["Title"] = "All Reports";
+}
+
+<div class="HeadingRow">
+    <h2 class="heading-left">All Reports</h2>
+
+    <p class="heading-right">
+        <a class="createNewReportButton" asp-action="CreateReport">Create New</a>
+    </p>
+</div>
+
+<hr />
+
+<div>
+    <form method="GET" asp-controller="Report" asp-action="GetAllReports">
+        <p>
+            <div class="FilterBy">
+                Hazard Type:
+            </div>
+            <div class="FilterInputFieldContainer">
+                <input class="FilterInputField1" type="text" name="searchString">
+            </div>
+            <div class="FilterButton">
+                <input class="styled-btn-sm" type="submit" value="Filter" />
+            </div>
+        </p>
+    </form>
+</div>
+
+<div>
+    <form method="GET" asp-controller="Report" asp-action="GetAllReports">
+        <p>
+            <div class="FilterBy">
+                Report Status:
+            </div>
+            <div class="FilterInputFieldContainer">
+                <select type="submit" name="statusString" class="FilterInputField2">
+                    <option value=""> All </option>
+                    <option value="Open">Open</option>
+                    <option value="BeingInvestigated">Being Investigated</option>
+                    <option value="Closed">Closed</option>
+                    <option value="NoActionRequired">No Action Required</option>
+                </select>
+            </div>
+            <div class="FilterButton">
+                <input class="styled-btn-sm" type="submit" value="Filter" />
+            </div>
+
+        </p>
+    </form>
+</div>
+
+<br />
+
+<!--If the IEnumerable does not contain any reports, display an appropriate message-->
+@if (Model == null || !Model.Any()) {
+    <hr />
+    <h2 class="NoReportsMessage">No Reports Found!</h2>
+}
+//Otherwise(i.e. if the IEnumerable does contain reports), display their details
+else {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Reporter)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Investigator)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UpVoteCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TypeOfHazard)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateOfSubmission)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Priority)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Reporter.FullName)
+                    </td>
+                    <td>
+                        @if (item.InvestigatorID == null) {
+                            <span>Not Assigned Yet</span>
+                        }
+                        else {
+                            <span>@item.Investigator.FullName</span>
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UpVoteCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TypeOfHazard)
+                    </td>
+                    <td type="Date">
+                        @item.DateOfSubmission.ToString("dd/MMM/yyyy")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Priority)
+                    </td>
+                    <td>
+                        <a class="styled-link" asp-action="Details" asp-route-id="@item.ReportId">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

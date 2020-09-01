@@ -1,0 +1,36 @@
+﻿@model NEMESYS.Models.User
+
+@{
+    ViewData["Title"] = "Edit Phone";
+}
+
+<h2>Edit Your Phone Number</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditUserPhone">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId" /> <!--Important for the update operation - to specify which user we are updating -->
+            <input type="hidden" asp-for="Email" />
+            <input type="hidden" asp-for="FullName" />
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Role" />
+            <input type="hidden" asp-for="NoOfReportsSubmitted" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="styled-btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footerInfo">
+    <a asp-action="Profile" class="styled-link">Back to Details</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

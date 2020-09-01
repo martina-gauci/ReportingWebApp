@@ -1,0 +1,650 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar {
+    background-color: #BA0C2F;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand1 {
+    color: white;
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#nav-list-item {
+    color: white;
+}
+
+#nav-list-item:hover {
+    text-decoration:underline;
+}
+
+.dropdown-menu {
+    text-align: center;
+    width: 200px;
+}
+
+.dropdown-item {
+    color: #BA0C2F;
+}
+
+    .dropdown-item:hover {
+        color: #BA0C2F;
+    }
+
+.createNewReportButton {
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding: 10px;
+}
+
+    .createNewReportButton:focus {
+        text-decoration: none;
+        color: #BA0C2F;
+    }
+
+    .createNewReportButton:hover {
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+.styled-btn-sm {
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding: 10px;
+    padding: 2px;
+    width: 100%;
+}
+
+    .styled-btn-sm:focus, .styled-btn-sm:active {
+        outline: none !important;
+    }
+
+    .styled-btn-sm:hover {
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+.styled-btn {
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding: 10px;
+    width: 200px;
+}
+
+    .styled-btn:focus, .styled-btn:active {
+        outline: none !important;
+    }
+
+    .styled-btn:hover{
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+.NoReportsMessage {
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+#NotAnInvestigatorOrAdminMessage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.formSubmitButton {
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+    .formSubmitButton:focus, .formSubmitButton:active {
+        outline: none;
+    }
+
+    .formSubmitButton:hover {
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+
+.styled-link {
+    color: #BA0C2F;
+}
+
+    .styled-link:focus, .styled-link:active {
+        color: #BA0C2F ;
+        text-decoration:none;
+    }
+
+    .styled-link:hover {
+        color: #BA0C2F;
+        text-decoration: underline;
+    }
+
+.styled-submit-button {
+    color: #BA0C2F;
+    border:none;
+    background:none;
+}
+
+    .styled-submit-button:focus, .styled-submit-button:active {
+        color: #BA0C2F;
+        text-decoration: none;
+        outline:none;
+    }
+
+    .styled-submit-button:hover {
+        color: #BA0C2F;
+        text-decoration: underline;
+        outline: none;
+    }
+
+.heading-left {
+    float: left;
+    width: 80%;
+}
+
+.heading-right {
+    float: left;
+    width: 20%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+#HomePageHeading {
+    font-size: 2vw;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#HomePageTitle {
+    font-family: Courier New;
+    text-align: center;
+    font-size: 5vw;
+    color: #BA0C2F;
+}
+
+#HomePageFirstParagraph {
+    margin-top:10px;
+    font-family: Trebuchet MS;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+.HomePageOtherParagraphs {
+    margin-top: 20px;
+    font-family: Trebuchet MS;
+    text-align: justify;
+    font-size: 1.2vw;
+}
+
+.NemesysInHomePageParagraph {
+    color: #BA0C2F;
+    font-family: Courier New;
+    font-size:1.3vw;
+}
+
+#HomePageButton {
+    display: block;
+    text-align: center;
+    margin:auto;
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding:10px;
+    width: 300px;
+    font-size:1.4vw;
+}
+
+    #HomePageButton:focus, #HomePageButton:active {
+        outline: none !important;
+        text-decoration: none;
+    }
+
+    #HomePageButton:hover {
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+#leftAdminHomePageButtonContainer{
+    padding-right:5px;
+}
+
+#rightAdminHomePageButtonContainer {
+    padding-left: 5px;
+}
+
+.HomePageAdminButtons {
+    display: inline-block;
+    text-align: center;
+    color: #BA0C2F;
+    background-color: #fff;
+    border: 1px #BA0C2F solid;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.4vw;
+}
+
+    .HomePageAdminButtons:focus, .HomePageAdminButtons:active {
+        outline: none !important;
+        text-decoration: none;
+    }
+
+    .HomePageAdminButtons:hover {
+        color: white;
+        background-color: #BA0C2F;
+        text-decoration: none;
+    }
+
+
+#addReportImageButton {
+    width: 100%;
+    background-color: #BA0C2F;
+}
+
+    #addReportImageButton:hover {
+        opacity:0.8;
+    }
+
+#upload-file-info {
+    background-color: #BA0C2F;
+}
+
+#reportDetailsImage {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    #reportDetailsImage:hover {
+        opacity:0.8;
+    }
+
+.display-row {
+    margin-bottom: 20px;
+}
+
+.display-row2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.bottom-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ReportAndInvestigationInfoText {
+    font-family: monospace;
+}
+
+.descriptionText {
+    text-align: justify;
+    height: 100%;
+    background-color: #F8F8F8;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .descriptionText:hover {
+        opacity: 0.8;
+    }
+
+.editOrDeleteReportButton {
+    background-color: #BA0C2F;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+    .editOrDeleteReportButton:focus, .editOrDeleteReportButton:active {
+        background-color: #BA0C2F !important;
+    }
+
+    .editOrDeleteReportButton:hover {
+        opacity: 0.8;
+        background-color: #BA0C2F;
+    }
+
+.AddOrViewInvestigationButton {
+    background-color: #BA0C2F;
+    width: 75%;
+    font-size: 14px;
+}
+
+    .AddOrViewInvestigationButton:focus, .AddOrViewInvestigationButton:active {
+        background-color: #BA0C2F !important;
+    }
+
+    .AddOrViewInvestigationButton:hover {
+        opacity: 0.8;
+        background-color: #BA0C2F;
+    }
+
+.ViewOrEditInvestigationButton {
+    background-color: #BA0C2F;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+    .ViewOrEditInvestigationButton:focus, .ViewEditDeleteInvestigationButtonSM:active {
+        background-color: #BA0C2F !important;
+    }
+
+    .ViewOrEditInvestigationButton:hover {
+        opacity: 0.8;
+        background-color: #BA0C2F;
+    }
+
+.InvestigationViewReportDetailsRow {
+    margin-bottom: 30px;
+}
+
+#CreateInvestigationHeader {
+    margin-bottom:20px;
+}
+
+.footerInfo {
+   margin-top:30px;
+   margin-bottom:-10px;
+}
+
+.topRow {
+    overflow: hidden;
+}
+
+.pageTitle {
+    float:left;
+}
+
+.containerOfEditAndDeleteReportButtons {
+    margin-top: 15px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.deleteReportForm {
+    display: inline-block;
+}
+
+.AddOrRemoveUpvoteButton {
+    display: inline-block;
+}
+
+.HallOfFameHeadings {
+    text-align: center;
+}
+
+.HeadingRow {
+    margin-top:10px;
+    margin-bottom:-10px;
+    overflow:hidden;
+}
+
+.FilterBy {
+    width: 120px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.FilterInputFieldContainer {
+    width: 200px;
+    display: inline-block;
+}
+
+.FilterInputField1 {
+    width: 100%;
+    padding-left:5px;
+}
+
+.FilterInputField2 {
+    padding: 3.5px;
+    width: 100%;
+}
+
+.FilterButton {
+    width: 100px;
+    display: inline-block;
+}
+
+#labelForMap {
+    margin-top: 0px;
+}
+
+#Map {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+}
+
+.addOrEditReportInputFieldWithTopMargin {
+    margin-top: 14px;
+}
+
+#dropPinErrorMessage {
+    display: block;
+    margin-top: 5px;
+    color: #a94442;
+}
+
+.userRoleSelectContaier {
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 993px) {
+    #nav-list-item {
+        color: white;
+        font-size: 13px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .createNewReportButton {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+
+    .formSubmitButton{
+        font-size:1.6vw;
+    }
+
+    .AddOrViewInvestigationButton {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.2vw;
+    }
+
+    .ViewOrEditInvestigationButton {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.2vw;
+    }
+
+    #HomePageHeading {
+        font-size: 3vw;
+    }
+
+    #HomePageTitle {
+        font-size: 7vw;
+    }
+
+    #HomePageButton {
+        font-size: 2.4vw;
+    }
+
+    .HomePageAdminButtons {
+        font-size: 2.4vw;
+    }
+
+    #HomePageFirstParagraph {
+        font-size: 1.4vw;
+    }
+
+    .HomePageOtherParagraphs {
+        font-size: 1.4vw;
+    }
+
+    .NemesysInHomePageParagraph {
+        font-size: 1.6vw;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    #nav-list-item {
+        color: white;
+        text-align:center;
+    }
+    .dropdown-item {
+        color: white;
+    }
+        .dropdown-item:hover {
+            color: white;
+        }
+
+    #HomePageHeading {
+        font-size: 3vw;
+    }
+
+    #HomePageTitle {
+        font-size: 7vw;
+    }
+
+    #HomePageButton {
+        font-size: 2.4vw;
+    }
+
+    .HomePageAdminButtons {
+        font-size: 2.4vw;
+    }
+
+    #HomePageFirstParagraph {
+        font-size: 2.2vw;
+    }
+
+    .HomePageOtherParagraphs {
+        font-size: 2.2vw;
+    }
+
+    .NemesysInHomePageParagraph {
+        font-size: 2.4vw;
+    }
+
+    .formSubmitButton {
+        font-size: 1.8vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .editOrDeleteReportButton {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .AddOrViewInvestigationButton {
+        width: 85%;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 1.4vw;
+    }
+
+    .ViewOrEditInvestigationButton {
+        width: 85%;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 1.4vw;
+    }
+
+    #HomePageHeading {
+        font-size: 4vw;
+    }
+
+    #HomePageTitle {
+        font-size: 8vw;
+    }
+
+    #HomePageButton {
+        width: 200px;
+        font-size: 2.4vw;
+    }
+
+    .HomePageAdminButtons {
+        font-size: 2.4vw;
+    }
+
+    #HomePageFirstParagraph {
+        font-size: 2.6vw;
+    }
+
+    .HomePageOtherParagraphs {
+        font-size: 2.6vw;
+    }
+
+    .NemesysInHomePageParagraph {
+        font-size: 2.8vw;
+    }
+
+    .FilterInputFieldContainer {
+        width: 160px;
+    }
+
+    .FilterButton {
+        width: 60px;
+    }
+
+    #labelForMap {
+        font-size:11px;
+    }
+
+    .formSubmitButton {
+        font-size:1.65vw;
+    }
+}
